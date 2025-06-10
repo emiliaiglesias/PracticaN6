@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Formulario de Alta</title>
+    </head>
+    <body>
+        <form action="Alta.php" method="POST" name="FormAlta">
+            <table width="225">
+                <tr>
+                    <td>Ciudad:</td>
+                    <td><input type="text" name="ciudad" size="20" maxlength="40" required></td>
+                </tr>
+                <tr>
+                    <td>País:</td>
+                    <td><input type="text" name="pais" size="20" maxlength="40" required></td>
+                </tr>
+                <tr>
+                    <td>Habitantes:</td>
+                    <td><input type="number" name="habitantes" size="20" min="0" required></td>
+                </tr>
+                <tr>
+                    <td>Superficie:</td>
+                    <td><input type="number" name="superficie" size="20" min="0" step="0.01" required></td>
+                </tr>
+                <tr>
+                    <td>Metro:</td>
+                    <td>
+                        <select name="opcion" required>
+                            <option value="" disabled selected>Seleccione</option>
+                            <option value="1">Sí tiene</option>
+                            <option value="0">No tiene</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" name="btnalta">Agregar</button>
+                        <p><a href="Menu.html">Volver al menú del ABM</a></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
